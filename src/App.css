@@ -9,13 +9,70 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.wrapper {
+	color: white;
+  text-align: left;
+  max-width: 46%;
+}
+
+.question-content {
+	align-self: center;
+	background-color: #476363;
+	color: white;
+	font-size: 23px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  
+}
+
+.answer-options {
+	background-color: #f9f4f4;
+	color: black;
+  padding: 15px;
+  border: 1px solid #ebe9ec;
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 40%;
+}
+
+.questions-section {
+  margin: 40px 0 10px 40px;
+}
+
+label {
+  padding: 10px;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin: 0 !important;
+}
+
+.form-control {
+  width: 50% !important;
+}
+
+canvas {
+  width: 46% !important;
+  height: 500px !important;
+  float: right;
+  position: absolute;
+  left: 50%;
+  top: 20%;
 }
 
 .App-link {

@@ -1,0 +1,38 @@
+import React from 'react';
+import {Bar} from 'react-chartjs-2';
+
+const BarChart = (props) => {
+
+    const options = {
+        responsive: true,
+        tooltips: { enabled: false },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    fixedStepSize: 1,
+                    suggestedMax: 4
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontColor:['rgba(44,44,44,0.8)','rgba(44,44,44,0.8)']
+                }
+            }]
+        },
+        title: {
+            display: true,
+            text: 'Result',
+            fontSize: 25,
+        },
+        legend: { display: false },
+        maintainAspectRatio: true
+    }
+        return (
+            <div className="chart">
+              <Bar data={props.data} options={options} height={150} />
+            </div>
+        );
+};
+
+export default BarChart;
