@@ -20,7 +20,7 @@ class Questions extends React.Component {
   handleSubmit(e) {
     e.preventDefault(); 
     alert("you have submitted the form");
-
+    
   }
 
   render() {
